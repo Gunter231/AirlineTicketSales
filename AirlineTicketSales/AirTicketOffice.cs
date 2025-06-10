@@ -63,15 +63,20 @@ namespace AirlineTicketSales
                 }
                 else
                 {
-                    MessageBox.Show("Рейс уже добавлен в выбранные.", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Рейс уже добавлен в выбранные.", "Информация", MessageBoxButtons.OK);
                 }
             }
             else
             {
-                MessageBox.Show("Выберите рейс из списка слева.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Выберите рейс из списка слева.", "Ошибка", MessageBoxButtons.OK);
             }
         }
         private void buttonShowSoldTickets_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonShowSoldTickets_Click_1(object sender, EventArgs e)
         {
             if (listBoxSelectedFlights.SelectedItem is Flight selectedFlight)
             {
@@ -80,7 +85,7 @@ namespace AirlineTicketSales
             }
             else
             {
-                MessageBox.Show("Выберите рейс из правого списка.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Выберите рейс из правого списка.", "Ошибка", MessageBoxButtons.OK);
             }
         }
     }

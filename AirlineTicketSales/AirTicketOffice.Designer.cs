@@ -70,6 +70,7 @@
             this.buttonShowSoldTickets.TabIndex = 3;
             this.buttonShowSoldTickets.Text = "ПРОДАЖА БИЛЕТОВ ЗАКРЫТА";
             this.buttonShowSoldTickets.UseVisualStyleBackColor = true;
+            this.buttonShowSoldTickets.Click += new System.EventHandler(this.buttonShowSoldTickets_Click_1);
             // 
             // AirTicketOffice
             // 
