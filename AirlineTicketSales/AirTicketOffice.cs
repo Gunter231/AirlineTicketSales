@@ -43,7 +43,7 @@ namespace AirlineTicketSales
             listBoxAvailableFlights.Items.Clear();
             foreach (Flight flight in flights)
             {
-                listBoxAvailableFlights.Items.Add(flight.Name + " " + flight.Date + " " + flight.Time);
+                listBoxAvailableFlights.Items.Add(flight);
             }
         }
         private void listBoxAvailableFlights_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,14 +60,6 @@ namespace AirlineTicketSales
 
                     var passengerForm = new FormPassanger(selectedFlight);
                     var result = passengerForm.ShowDialog();
-
-                    if (result == DialogResult.OK)
-                    {
-                    }
-                    else
-                    {
-                        listBoxSelectedFlights.Items.Remove(selectedFlight);
-                    }
                 }
                 else
                 {
@@ -76,7 +68,19 @@ namespace AirlineTicketSales
             }
             else
             {
-                MessageBox.Show("Выберите рейс из списка слева.", "Ошибка", MessageBoxButtons.OK);
+                MessageBox.Show("Выберите рейс из списка слева.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void buttonShowSoldTickets_Click(object sender, EventArgs e)
+        {
+            if (listBoxSelectedFlights.SelectedItem is Flight selectedFlight)
+            {
+                var soldTicketsForm = new FormSoldTickets(selectedFlight);
+                soldTicketsForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Выберите рейс из правого списка.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

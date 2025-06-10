@@ -31,6 +31,7 @@
             this.listBoxAvailableFlights = new System.Windows.Forms.ListBox();
             this.listBoxSelectedFlights = new System.Windows.Forms.ListBox();
             this.buttonAddFlight = new System.Windows.Forms.Button();
+            this.buttonShowSoldTickets = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxAvailableFlights
@@ -38,16 +39,16 @@
             this.listBoxAvailableFlights.FormattingEnabled = true;
             this.listBoxAvailableFlights.Location = new System.Drawing.Point(49, 49);
             this.listBoxAvailableFlights.Name = "listBoxAvailableFlights";
-            this.listBoxAvailableFlights.Size = new System.Drawing.Size(245, 251);
+            this.listBoxAvailableFlights.Size = new System.Drawing.Size(263, 251);
             this.listBoxAvailableFlights.TabIndex = 0;
             this.listBoxAvailableFlights.SelectedIndexChanged += new System.EventHandler(this.listBoxAvailableFlights_SelectedIndexChanged);
             // 
             // listBoxSelectedFlights
             // 
             this.listBoxSelectedFlights.FormattingEnabled = true;
-            this.listBoxSelectedFlights.Location = new System.Drawing.Point(559, 49);
+            this.listBoxSelectedFlights.Location = new System.Drawing.Point(478, 49);
             this.listBoxSelectedFlights.Name = "listBoxSelectedFlights";
-            this.listBoxSelectedFlights.Size = new System.Drawing.Size(190, 251);
+            this.listBoxSelectedFlights.Size = new System.Drawing.Size(263, 251);
             this.listBoxSelectedFlights.TabIndex = 1;
             // 
             // buttonAddFlight
@@ -61,11 +62,21 @@
             this.buttonAddFlight.UseVisualStyleBackColor = true;
             this.buttonAddFlight.Click += new System.EventHandler(this.buttonAddFlight_Click);
             // 
+            // buttonShowSoldTickets
+            // 
+            this.buttonShowSoldTickets.Location = new System.Drawing.Point(512, 341);
+            this.buttonShowSoldTickets.Name = "buttonShowSoldTickets";
+            this.buttonShowSoldTickets.Size = new System.Drawing.Size(198, 33);
+            this.buttonShowSoldTickets.TabIndex = 3;
+            this.buttonShowSoldTickets.Text = "ПРОДАЖА БИЛЕТОВ ЗАКРЫТА";
+            this.buttonShowSoldTickets.UseVisualStyleBackColor = true;
+            // 
             // AirTicketOffice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonShowSoldTickets);
             this.Controls.Add(this.buttonAddFlight);
             this.Controls.Add(this.listBoxSelectedFlights);
             this.Controls.Add(this.listBoxAvailableFlights);
@@ -81,6 +92,7 @@
         private System.Windows.Forms.ListBox listBoxAvailableFlights;
         private System.Windows.Forms.ListBox listBoxSelectedFlights;
         private System.Windows.Forms.Button buttonAddFlight;
+        private System.Windows.Forms.Button buttonShowSoldTickets;
     }
 }
 

@@ -31,7 +31,7 @@
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.buttonCansel = new System.Windows.Forms.Button();
-            this.textLastName = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxSeat = new System.Windows.Forms.TextBox();
             this.labelFlightInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -51,6 +51,7 @@
             this.buttonConfirm.TabIndex = 1;
             this.buttonConfirm.Text = "Подтвердить";
             this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click_1);
             // 
             // buttonCansel
             // 
@@ -61,12 +62,12 @@
             this.buttonCansel.Text = "Отмена";
             this.buttonCansel.UseVisualStyleBackColor = true;
             // 
-            // textLastName
+            // textBoxLastName
             // 
-            this.textLastName.Location = new System.Drawing.Point(183, 57);
-            this.textLastName.Name = "textLastName";
-            this.textLastName.Size = new System.Drawing.Size(100, 20);
-            this.textLastName.TabIndex = 3;
+            this.textBoxLastName.Location = new System.Drawing.Point(183, 57);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastName.TabIndex = 3;
             // 
             // textBoxSeat
             // 
@@ -91,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(521, 187);
             this.Controls.Add(this.labelFlightInfo);
             this.Controls.Add(this.textBoxSeat);
-            this.Controls.Add(this.textLastName);
+            this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.buttonCansel);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.textBoxFirstName);
@@ -108,7 +109,7 @@
         private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Button buttonConfirm;
         private System.Windows.Forms.Button buttonCansel;
-        private System.Windows.Forms.TextBox textLastName;
+        private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.TextBox textBoxSeat;
         private System.Windows.Forms.Label labelFlightInfo;
     }
