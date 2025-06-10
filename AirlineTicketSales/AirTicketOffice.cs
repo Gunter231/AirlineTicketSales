@@ -49,17 +49,10 @@ namespace AirlineTicketSales
         private void listBoxAvailableFlights_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-    }
-    public class Flight
-    {
-        public string Name;
-        public string Date;
-        public string Time;
-        public Flight(string name, string date, string time)
+
+        private void buttonAddFlight_Click(object sender, EventArgs e)
         {
-            Name = name;
-            Date = date;
-            Time = time;
+
         }
     }
 

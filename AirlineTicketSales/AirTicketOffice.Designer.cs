@@ -59,6 +59,7 @@
             this.buttonAddFlight.TabIndex = 2;
             this.buttonAddFlight.Text = "Добавить рейс";
             this.buttonAddFlight.UseVisualStyleBackColor = true;
+            this.buttonAddFlight.Click += new System.EventHandler(this.buttonAddFlight_Click);
             // 
             // AirTicketOffice
             // 

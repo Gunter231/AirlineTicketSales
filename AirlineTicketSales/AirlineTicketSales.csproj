@@ -52,10 +52,20 @@
     <Compile Include="AirTicketOffice.Designer.cs">
       <DependentUpon>AirTicketOffice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Flight.cs" />
+    <Compile Include="FormPassanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassanger.Designer.cs">
+      <DependentUpon>FormPassanger.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AirTicketOffice.resx">
       <DependentUpon>AirTicketOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassanger.resx">
+      <DependentUpon>FormPassanger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
