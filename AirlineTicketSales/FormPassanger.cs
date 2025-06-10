@@ -12,9 +12,17 @@ namespace AirlineTicketSales
 {
     public partial class FormPassanger : Form
     {
-        public FormPassanger()
+        private Flight flight;
+        public FormPassanger(Flight flight)
         {
             InitializeComponent();
+            this.flight = flight;
+            labelFlightInfo.Text = flight.ToString();
+        }
+
+        private void FormPassanger_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

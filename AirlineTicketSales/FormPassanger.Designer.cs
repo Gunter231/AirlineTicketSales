@@ -28,64 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.buttonConfirm = new System.Windows.Forms.Button();
+            this.buttonCansel = new System.Windows.Forms.Button();
+            this.textLastName = new System.Windows.Forms.TextBox();
+            this.textBoxSeat = new System.Windows.Forms.TextBox();
+            this.labelFlightInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxFirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxFirstName.Location = new System.Drawing.Point(12, 57);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.TabIndex = 0;
             // 
-            // button1
+            // buttonConfirm
             // 
-            this.button1.Location = new System.Drawing.Point(105, 144);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Location = new System.Drawing.Point(105, 144);
+            this.buttonConfirm.Name = "buttonConfirm";
+            this.buttonConfirm.Size = new System.Drawing.Size(91, 23);
+            this.buttonConfirm.TabIndex = 1;
+            this.buttonConfirm.Text = "Подтвердить";
+            this.buttonConfirm.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonCansel
             // 
-            this.button2.Location = new System.Drawing.Point(286, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCansel.Location = new System.Drawing.Point(286, 144);
+            this.buttonCansel.Name = "buttonCansel";
+            this.buttonCansel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCansel.TabIndex = 2;
+            this.buttonCansel.Text = "Отмена";
+            this.buttonCansel.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.textLastName.Location = new System.Drawing.Point(183, 57);
+            this.textLastName.Name = "textLastName";
+            this.textLastName.Size = new System.Drawing.Size(100, 20);
+            this.textLastName.TabIndex = 3;
             // 
-            // textBox3
+            // textBoxSeat
             // 
-            this.textBox3.Location = new System.Drawing.Point(363, 39);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
+            this.textBoxSeat.Location = new System.Drawing.Point(363, 57);
+            this.textBoxSeat.Name = "textBoxSeat";
+            this.textBoxSeat.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSeat.TabIndex = 4;
+            // 
+            // labelFlightInfo
+            // 
+            this.labelFlightInfo.AutoSize = true;
+            this.labelFlightInfo.Location = new System.Drawing.Point(209, 9);
+            this.labelFlightInfo.Name = "labelFlightInfo";
+            this.labelFlightInfo.Size = new System.Drawing.Size(35, 13);
+            this.labelFlightInfo.TabIndex = 5;
+            this.labelFlightInfo.Text = "label1";
             // 
             // FormPassanger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 187);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelFlightInfo);
+            this.Controls.Add(this.textBoxSeat);
+            this.Controls.Add(this.textLastName);
+            this.Controls.Add(this.buttonCansel);
+            this.Controls.Add(this.buttonConfirm);
+            this.Controls.Add(this.textBoxFirstName);
             this.Name = "FormPassanger";
             this.Text = "FormPassanger";
+            this.Load += new System.EventHandler(this.FormPassanger_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,10 +105,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.Button buttonConfirm;
+        private System.Windows.Forms.Button buttonCansel;
+        private System.Windows.Forms.TextBox textLastName;
+        private System.Windows.Forms.TextBox textBoxSeat;
+        private System.Windows.Forms.Label labelFlightInfo;
     }
 }
